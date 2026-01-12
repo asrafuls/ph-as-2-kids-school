@@ -1,0 +1,147 @@
+/* Small devices (phones, < 576px) */
+/* Default: full width with padding */
+
+/* Tablets (≥ 576px) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Small laptops / tablets landscape (≥ 768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Desktops (≥ 992px) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Large desktops (≥ 1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Extra large screens (≥ 1400px) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Max 768px (Tablets) */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 100% !important;
+  }
+
+  /* Responsive mobile menu toggler */
+  .mobile-menu-toggler {
+    display: block;
+  }
+
+  .mobile-menu ul {
+    padding-left: 0 !important;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+    padding: 15px 0 !important;
+  }
+  .header-contact-section a {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* Responsive hero section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 45px;
+  }
+  .hero-content p {
+    font-size: 18px;
+  }
+  .hero-content {
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: 20px;
+  }
+  .hero-image {
+    display: none !important;
+  }
+  .hero-image-for-mobile {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /* Responsive curriculum section */
+  .curriculum-items {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .curriculum-item {
+    width: 100%;
+    padding: 30px 15px;
+    box-shadow: none !important;
+  }
+
+  /* Responsive Stories section */
+  .stories-left-column {
+    display: none;
+  }
+  .stories-right-column {
+    /* flex-direction: column !important; */
+    width: 100%;
+  }
+  .story-item p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .story-item-date {
+    padding: 0 0 !important;
+    margin-top: -110px;
+    margin-left: 10px;
+  }
+  .story-item-date p {
+    font-size: 10px;
+    padding: 0 10px !important;
+  }
+
+  /* Responsive footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: start; /* Center-aligns text for a better mobile look */
+    gap: 40px; /* Adds space between the stacked sections */
+  }
+
+  .footer-section {
+    width: 100% !important; /* Forces sections to take full width */
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .footer-logo {
+    text-align: start; /* Aligns logo to the left */
+    margin-bottom: 15px;
+  }
+
+  .footer-section-links ul {
+    padding: 0; /* Removes default padding that might cause off-centering */
+  }
+}

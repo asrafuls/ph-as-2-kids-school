@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Responsive styles -->
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- Scripts for mobile menu toggler -->
+    <script>
+      const menuBtn = document.querySelector(".mobile-menu-toggler button");
+      const navMenu = document.querySelector(".mobile-menu");
+      const menuBtnToggle = function () {
+        // This toggles the 'active' class on the <nav> element
+        navMenu.classList.toggle("mobile-menu-active");
+      };
+    </script>
+
+    <title>PH B11 A2 - Kids School</title>
+  </head>
+  <body>
+    <header class="container" style="display: flex">
+      <a
+        href="/"
+        class="logo"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          width: 200px;
+          justify-content: flex-start;
+          text-decoration: none;
+        "
+      >
+        <img src="./images/logo.png" alt="" class="logo-image" style="" />
+        <h1 class="quicksand-font-600" style="color: black">SCHOOL</h1>
+      </a>
+      <nav style="margin: 0 auto">
+        <ul
+          style="
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+          "
+          class="nav-items"
+        >
+          <li><a style="color: orange" href="index.html">Home</a></li>
+          <li>
+            <a style="color: rgb(0, 183, 255)" href="about.html">About Us</a>
+          </li>
+          <li><a style="color: #05d4df" href="programs.html">Programs</a></li>
+          <li><a style="color: #5d58ef" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div
+        class="header-contact-section"
+        style="
+          display: flex;
+          align-items: center;
+          width: 200px;
+          justify-content: flex-end;
+        "
+      >
+        <a href="/contact" class="header-contact-btn">Contact Us</a>
+        <div class="mobile-menu-toggler">
+          <button onclick="menuBtnToggle()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+              <path
+                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-menu" style="display: none">
+      <ul
+        style="
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <li><a style="color: orange" href="index.html">Home</a></li>
+        <li>
+          <a style="color: rgb(0, 183, 255)" href="about.html">About Us</a>
+        </li>
+        <li><a style="color: #05d4df" href="programs.html">Programs</a></li>
+        <li><a style="color: #5d58ef" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <section class="container hero">
+        <div
+          class="hero-image-for-mobile"
+          style="width: 100%; margin-bottom: 30px"
+        >
+          <img
+            src="./images/hero-kids.png"
+            alt="Kids School Hero Image"
+            style="width: 95%"
+          />
+        </div>
+        <div class="hero-content">
+          <h1 class="quicksand-font-700">
+            <span style="color: orange">Empowering</span> students from small
+            age <span style="color: rgb(0, 183, 255)">towards vision</span>
+          </h1>
+          <p class="quicksand-font-400">
+            With the courage, Confidence, Creativity and Compassion to make
+            their Unique Contribution in a Diverse and Dynamic World.
+          </p>
+          <a href="about.html" class="hero-btn quicksand-font-400"
+            >Enroll Now</a
+          >
+        </div>
+        <div
+          class="hero-image"
+          style="display: flex; justify-content: flex-end"
+        >
+          <img
+            src="./images/hero-kids.png"
+            alt="Kids School Hero Image"
+            style="width: 95%"
+          />
+        </div>
+      </section>
+
+      <section class="container curriculum">
+        <div class="curriculum-header">
+          <h1
+            class="quicksand-font-700 section-title"
+            style="text-align: center; padding: 50px 0"
+          >
+            Standard Curriculum
+          </h1>
+          <div class="curriculum-items">
+            <div
+              class="curriculum-item curriculum-item-kinder quicksand-font-400"
+            >
+              <img src="./images/kinder.png" alt="Curriculum Icon" />
+              <h2>Kinder (3-6) Years</h2>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mu sdis parturient
+              </p>
+              <a style="color: #64c8ff" href="/curriculum/kinder-3-6-years"
+                >Read More</a
+              >
+            </div>
+            <div
+              class="curriculum-item curriculum-item-elementary quicksand-font-400"
+            >
+              <img src="./images/elementary.png" alt="Curriculum Icon" />
+              <h2>Elementary School</h2>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mu sdis parturient
+              </p>
+              <a style="color: #ffb30e" href="/curriculum/kinder-3-6-years"
+                >Read More</a
+              >
+            </div>
+            <div
+              class="curriculum-item curriculum-item-middle quicksand-font-400"
+            >
+              <img src="./images/middle.png" alt="Curriculum Icon" />
+              <h2>Middle (10-16) Years</h2>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mu sdis parturient
+              </p>
+              <a style="color: #8700ff" href="/curriculum/kinder-3-6-years"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div
+            class="curriculum-section-bottom-slide-buttons"
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              margin-top: 70px;
+            "
+          >
+            <button class="curriculum-slide-btn curriculum-slide-btn-left">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M201.4 297.4C188.9 309.9 188.9 330.2 201.4 342.7L361.4 502.7C373.9 515.2 394.2 515.2 406.7 502.7C419.2 490.2 419.2 469.9 406.7 457.4L269.3 320L406.6 182.6C419.1 170.1 419.1 149.8 406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3L201.3 297.3z"
+                />
+              </svg>
+            </button>
+            <button class="curriculum-slide-btn curriculum-slide-btn-right">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="stories">
+        <div class="stories-content container">
+          <h1
+            class="quicksand-font-700 section-title"
+            style="text-align: center; padding: 70px 0"
+          >
+            Our Stories
+          </h1>
+
+          <div
+            class="stories-flex-container"
+            style="display: flex; justify-content: center; gap: 40px"
+          >
+            <div class="stories-left-column" style="flex: 1">
+              <div class="story-item story-item-1">
+                <img src="./images/story-1.png" alt="Students in class" />
+                <div class="story-item-texts">
+                  <div class="story-item-date">
+                    <p class="quicksand-font-400">August 15, 2024</p>
+                  </div>
+                  <h2 class="quicksand-font-600">
+                    A Day in the Life of Our Students
+                  </h2>
+                  <p class="quicksand-font-400">
+                    Explore a typical day at our school through the eyes of our
+                    students...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="stories-right-column"
+              style="display: flex; flex-direction: row; gap: 20px; flex: 1"
+            >
+              <div style="flex: 1">
+                <div class="story-item story-item-2">
+                  <img src="./images/story-2.png" alt="Teacher" />
+                  <div class="story-item-date">
+                    <p class="quicksand-font-400">August 15, 2024</p>
+                  </div>
+                  <p class="quicksand-font-400">
+                    Meet our dedicated teachers who go above and beyond.
+                  </p>
+                </div>
+                <div class="story-item story-item-3">
+                  <img src="./images/story-3.png" alt="Events" />
+                  <div class="story-item-date">
+                    <p class="quicksand-font-400">August 15, 2024</p>
+                  </div>
+                  <p class="quicksand-font-400">
+                    Discover how our school engages with the local community.
+                  </p>
+                </div>
+              </div>
+              <div style="flex: 1">
+                <div class="story-item story-item-2">
+                  <img src="./images/story-2.png" alt="Teacher" />
+                  <div class="story-item-date">
+                    <p class="quicksand-font-400">August 15, 2024</p>
+                  </div>
+                  <p class="quicksand-font-400">
+                    Find out if a school fits the family’s needs
+                  </p>
+                </div>
+                <div class="story-item story-item-3">
+                  <img src="./images/story-3.png" alt="Events" />
+                  <div class="story-item-date">
+                    <p class="quicksand-font-400">August 15, 2024</p>
+                  </div>
+                  <p class="quicksand-font-400">
+                    Find out if a school fits the family’s needs
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 50px">
+            <a
+              href="/stories"
+              class="stories-view-all-btn quicksand-font-400"
+              style="
+                padding: 10px 40px;
+                background-color: #000000;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+              "
+              >View All</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-section footer-section-about">
+          <div class="footer-logo" style="display: flex; align-items: center">
+            <img src="./images/logo.png" alt="Kids School Logo" />
+            <div class="footer-header-logo-title">
+              <span class="quicksand-font-700">Kids</span><br />
+              <span class="quicksand-font-700">Education</span>
+            </div>
+          </div>
+          <p class="quicksand-font-400">
+            Kids School is dedicated to providing quality education and
+            nurturing the potential of every child.
+          </p>
+        </div>
+        <div class="footer-section footer-section-links">
+          <h2 class="quicksand-font-600">Quick Links</h2>
+          <ul
+            class="quicksand-font-400"
+            style="list-style: none; padding-left: 0px"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section footer-section-contact">
+          <h2 class="quicksand-font-600">Keep In Touch</h2>
+          <p class="quicksand-font-400 footer-social-media-links">
+            <a href="facebook.com/000" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM160 320C160 264.7 204.7 220 260 220C287 220 309.5 229.8 327 246.2L299.9 272.3C292.5 265.2 279.6 256.9 260.1 256.9C226 256.9 198.2 285.1 198.2 320.1C198.2 355 226 383.3 260.1 383.3C299.7 383.3 314.5 354.8 316.9 340.2L260 340.2L260 305.8L354.4 305.8C355.4 310.8 356 315.9 356 322.4C356 379.5 317.7 420 260 420C204.7 420 160 375.3 160 320zM451 338.2L451 367.2L421.8 367.2L421.8 338.2L392.8 338.2L392.8 309L421.8 309L421.8 280L451 280L451 309L480 309L480 338.2L451 338.2z"
+                />
+              </svg>
+            </a>
+            <a href="instagram.com/000" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM447.3 263.3C447.3 350 381.3 449.9 260.7 449.9C223.5 449.9 189 439.1 160 420.5C165.3 421.1 170.4 421.3 175.8 421.3C206.5 421.3 234.7 410.9 257.2 393.3C228.4 392.7 204.2 373.8 195.9 347.8C206 349.3 215.1 349.3 225.5 346.6C195.5 340.5 173 314.1 173 282.2L173 281.4C181.7 286.3 191.9 289.3 202.6 289.7C193.6 283.7 186.2 275.6 181.1 266.1C176 256.6 173.3 245.9 173.4 235.1C173.4 222.9 176.6 211.7 182.3 202C214.6 241.8 263.1 267.8 317.5 270.6C308.2 226.1 341.5 190 381.5 190C400.4 190 417.4 197.9 429.4 210.7C444.2 207.9 458.4 202.4 471 194.9C466.1 210.1 455.8 222.9 442.2 231C455.4 229.6 468.2 225.9 480 220.8C471.1 233.9 459.9 245.5 447.1 254.8C447.3 257.6 447.3 260.5 447.3 263.3z"
+                />
+              </svg>
+            </a>
+            <a href="twitter.com/000" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM160 320C160 264.7 204.7 220 260 220C287 220 309.5 229.8 327 246.2L299.9 272.3C292.5 265.2 279.6 256.9 260.1 256.9C226 256.9 198.2 285.1 198.2 320.1C198.2 355 226 383.3 260.1 383.3C299.7 383.3 314.5 354.8 316.9 340.2L260 340.2L260 305.8L354.4 305.8C355.4 310.8 356 315.9 356 322.4C356 379.5 317.7 420 260 420C204.7 420 160 375.3 160 320zM451 338.2L451 367.2L421.8 367.2L421.8 338.2L392.8 338.2L392.8 309L421.8 309L421.8 280L451 280L451 309L480 309L480 338.2L451 338.2z"
+                />
+              </svg>
+            </a>
+            <a href="google.com/000" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"
+                />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
